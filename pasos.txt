@@ -1,0 +1,104 @@
+crear package.json
+
+ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (rest_api_ts_server)
+version: (1.0.0)
+description: REST API's con Express y Typescript
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: AMH
+license: (ISC)
+About to write to C:\Users\thinkpad\Desktop\React\React JP\rest_api_ts_server\pa
+ckage.json:
+
+{
+  "name": "rest_api_ts_server",
+  "version": "1.0.0",
+  "description": "REST API's con Express y Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AMH",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+
+Dependencias para interpretar typescript
+npm i -D typescript ts-node
+
+agregar "dev": "nodemon -x ts-node src/index.ts" en package.json para ejecutar
+
+nodemon para escuchar los cambios
+npm i -D nodemon
+
+***** Problemas de ejecucion
+no corria se elimino node_modules y su volvio a instalar, se crear el achivo tsconfig.json en raiz
+
+crear tsconfig.json para la compliacion *** Ver configuracion
+para compilar npx tsc 
+
+Express
+npm i express
+npm i -D @types/express
+
+BD
+https://dashboard.render.com/new/database  -> github
+
+
+ORM -> sequelize
+npm install --save sequelize
+npm i sequelize-typescript
+https://sequelize.org/docs/v7/models/data-types/
+
+# One of the following:
+$ npm install --save pg pg-hstore # Postgres
+$ npm install --save mysql2
+$ npm install --save mariadb
+$ npm install --save sqlite3
+$ npm install --save tedious # Microsoft SQL Server
+$ npm install --save oracledb # Oracle Database
+
+para variables de entorno
+npm i dotenv
+
+Colors
+npm i colors
+
+
+Validacion
+npm i express-validator
+
+Testing
+npm i -D supertest
+npm i -D @types/supertest
+npm i -D jest
+npm i -D @types/jest
+npm i -D ts-jest
+
+npx ts-jest config:init para crear jest.config.js
+
+ejecutar prueba("test": "jest" - configurar en package.json) -> npm test
+
+
+codigos de respuestas http => https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
+
+Code Coverage
+es una metrica utilizada para medir la cantidad de codigo fuente que ha sido ejecutada o cubierto por un conjunto de pruebas
+
+npm run test:coverage
