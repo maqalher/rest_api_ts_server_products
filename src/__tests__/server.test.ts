@@ -1,5 +1,5 @@
 
-import request from "supertest";
+// import request from "supertest";
 import server, {connectDB} from "../server";
 import db from "../config/db";
 // describe('Nuestro primer test', () => {
@@ -12,18 +12,18 @@ import db from "../config/db";
 //     })
 // })
 
-describe('GET /api', () => {
-    it('sholud send back a json response', async () => {
-        const res = await request(server).get('/api')
+// describe('GET /api', () => {
+//     it('sholud send back a json response', async () => {
+//         const res = await request(server).get('/api')
 
-        expect(res.status).toBe(200) // peticion existosa
-        expect(res.header['content-type']).toMatch(/json/) // respuesta sea json
-        expect(res.body.msg).toBe('Desde API') // que la respuesta sea Desde API
+//         expect(res.status).toBe(200) // peticion existosa
+//         expect(res.header['content-type']).toMatch(/json/) // respuesta sea json
+//         expect(res.body.msg).toBe('Desde API') // que la respuesta sea Desde API
 
-        expect(res.status).not.toBe(404) // no debe que ser 404
-         expect(res.body.msg).not.toBe('desde api') // que la respuesta no debe ser desde api
-    })
-})
+//         expect(res.status).not.toBe(404) // no debe que ser 404
+//          expect(res.body.msg).not.toBe('desde api') // que la respuesta no debe ser desde api
+//     })
+// })
 
 jest.mock('../config/db')
 

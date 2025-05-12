@@ -102,3 +102,7 @@ Code Coverage
 es una metrica utilizada para medir la cantidad de codigo fuente que ha sido ejecutada o cubierto por un conjunto de pruebas
 
 npm run test:coverage
+
+Swagger
+  npm i swagger-jsdoc swagger-ui-express
+  npm i -D @types/swagger-jsdoc @types/swagger-ui-express
