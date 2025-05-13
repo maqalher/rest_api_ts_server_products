@@ -106,3 +106,14 @@ npm run test:coverage
 Swagger
   npm i swagger-jsdoc swagger-ui-express
   npm i -D @types/swagger-jsdoc @types/swagger-ui-express
+
+Cors
+  npm i cors
+  npm i -D @types/cors
+
+Morgan  es un middleware que escucha todas la peticiones
+  npm i morgan
+  npm i --save-dev @types/morgan
+
+
+"build": "tsc ", se agrega en package.json para compilar
